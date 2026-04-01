@@ -27,4 +27,12 @@ public class CustomerController {
 		else
 			return "login fail";
 	}
+	
+	
+	@PostMapping("/register")
+	public String register(@RequestBody Customer cus)
+	{
+		return cService.addUser(cus);
+		
+	}
 }

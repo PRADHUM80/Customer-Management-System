@@ -9,4 +9,7 @@ public interface CustomerService {
 	
 	boolean validate(Customer cus);
 
+	String addUser(Customer cus);
+	
+
 }

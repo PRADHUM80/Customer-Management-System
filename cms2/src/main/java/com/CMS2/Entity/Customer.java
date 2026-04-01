@@ -2,6 +2,7 @@ package com.CMS2.Entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -11,12 +12,13 @@ import jakarta.persistence.Table;
 public class Customer {
 
 	@Id
-	Long id;
+	@GeneratedValue
+	private Long id;
 	
 	@Column
-	String username;
+	private String username;
 	@Column
-	String password;
+	private String password;
 	
 	
 	public Customer() {
